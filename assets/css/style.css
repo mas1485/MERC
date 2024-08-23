@@ -1,0 +1,32 @@
+/* Asterix Wildcard to overide generic styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Generic Styles */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* Generic Project Styles */
+    color: aliceblue;
+}
+
+/* Header */
+header {
+    background-color: black;
+}
+
+/* Main Content */
+main {
+    background-color: rgb(10, 1, 92);
+    /* Makes the main content take up all surplus space and pushed footer down */
+    flex: 1 0 auto;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(42, 68, 218);
+}
