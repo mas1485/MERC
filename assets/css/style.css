@@ -96,3 +96,49 @@ main {
 footer {
     background-color: rgb(42, 68, 218);
 }
+
+/* Media query: tablets and larger (768px and up) */
+/* Remove navbar toggle and positioned nav elements horizontal along the navbar */
+@media screen and (min-width: 768px) {
+    /* Header */
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    #menu > li {
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
+
+    #logo {
+        font-size: 200%;
+        line-height: 75px;
+        margin: 0 0.75rem;
+    }
+
+    /* Main Content */
+    main {
+        background-color: rgb(10, 1, 92);
+        /* Makes the main content take up all surplus space and pushed footer down */
+        flex: 1 0 auto;
+        margin-top: 58.39px;
+    }
+}
+
+/* Media query: large devices desktops and laptops (992px and up) */
+@media screen and (min-width: 992) {
+    #menu a:hover {
+        border-bottom: 1px solid aqua;
+    }
+}
