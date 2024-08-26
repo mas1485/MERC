@@ -55,6 +55,18 @@ h1 {
     color: steelblue;
 }
 
+/* navbar styles with dropdown toggle  */
+/* navbar now matches header if toggled on and body if toggled off */
+nav {
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: none;
+}
+
 /* Main Content */
 main {
     background-color: rgb(10, 1, 92);
