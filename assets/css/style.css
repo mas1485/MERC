@@ -14,7 +14,7 @@ body {
     display: flex;
     flex-direction: column;
     /* Generic Project Styles */
-    color: rgb(8, 53, 253);
+    color: steelblue;
     font-family: 'Oswald', sans-serif;
 }
 
@@ -28,7 +28,7 @@ header {
     box-shadow: 0 2px 2px #3a3a3a;
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
 }
 
 header a {
@@ -40,7 +40,7 @@ h1 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: rgb(8, 53, 253);
+    color: steelblue;
 }
 
 #menu {
@@ -53,9 +53,15 @@ h1 {
     margin-bottom: 0.75em;
 }
 
+#logo img {
+    height: 74px;
+    position: relative;
+    display: flex;
+}
+
 .active {
     font-weight: 700;
-    color: steelblue;
+    color: aqua;
 }
 
 /* navbar styles with dropdown toggle  */
@@ -89,7 +95,7 @@ main {
     background-color: rgb(10, 1, 92);
     /* Makes the main content take up all surplus space and pushed footer down */
     flex: 1 0 auto;
-    margin-top: 47px;
+    margin-top: 74px;
 }
 
 /* Footer */
@@ -121,6 +127,7 @@ footer {
         box-shadow: none;
         width: fit-content;
         padding-right: 1rem;
+        top: 0.5rem;
     }
 
     #menu {
@@ -135,18 +142,12 @@ footer {
         display: none;
     }
 
-    #logo {
-        font-size: 200%;
-        line-height: 75px;
-        margin: 0 0.75rem;
-    }
-
     /* Main Content */
     main {
         background-color: rgb(10, 1, 92);
         /* Makes the main content take up all surplus space and pushed footer down */
         flex: 1 0 auto;
-        margin-top: 58.39px;
+        margin-top: 74px;
     }
 }
 
