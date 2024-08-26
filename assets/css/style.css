@@ -97,6 +97,20 @@ footer {
     background-color: rgb(42, 68, 218);
 }
 
+#social-networks {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+#social-networks i {
+    font-size: 160%;
+    padding: 5%;
+    color: aqua;
+}
+
 /* Media query: tablets and larger (768px and up) */
 /* Remove navbar toggle and positioned nav elements horizontal along the navbar */
 @media screen and (min-width: 768px) {
