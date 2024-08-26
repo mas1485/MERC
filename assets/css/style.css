@@ -15,6 +15,7 @@ body {
     flex-direction: column;
     /* Generic Project Styles */
     color: aliceblue;
+    font-family: 'Oswald', sans-serif;
 }
 
 /* Header */
@@ -32,5 +33,4 @@ main {
 /* Footer */
 footer {
     background-color: rgb(42, 68, 218);
-    font-family: 'Oswald', sans-serif;
 }
