@@ -41,7 +41,7 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 1px;
     color: whitesmoke;
-    font-size: 38px;
+    font-size: 32px;
 }
 
 h2 {
@@ -49,7 +49,7 @@ h2 {
     text-transform: uppercase;
     letter-spacing: 1px;
     color: gold;
-    font-size: 18px;
+    font-size: 24px;
 }
 
 h3 {
@@ -57,7 +57,19 @@ h3 {
     text-transform: uppercase;
     letter-spacing: 1px;
     color: cyan;
-    font-size: 12px;
+    font-size: 18px;
+}
+
+p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+i {
+    font-size: xx-large;
+    color: navy;
 }
 
 .nav {
@@ -114,7 +126,7 @@ h3 {
     box-shadow: 0px 0px 5px gold;
     width: 74px;
     display: inline-block;
-    font-size: 120%;
+    font-size: 18px;
     transition-property: background-color;
     transition-duration: 0.75s;
     letter-spacing: normal;
@@ -134,8 +146,7 @@ h3 {
     align-items: center;
     text-decoration: none;
     text-transform: none;
-    font-size: 12px;
-    box-shadow: 0px 0px 5px gold;
+    font-size: 14px;
     width: fit-content;
     height: auto;
     padding: 5px;
@@ -148,29 +159,48 @@ h3 {
 
 .button-main:hover {
     background-color: transparent;
-    color: gold;
+}
+
+.section {
+    border-top: 5px solid whitesmoke;
+    background-color: rgb(0, 174, 239);
+    display: inline-grid;
+    justify-items: center;
+    width: 100%;
+    padding: 25px;
+    gap: 10px;
+    text-align: center;
+}
+
+.image {
+    background-color: white;
+    width: 100%;
+    padding: 25px;
+    gap: 10px;
+    border-top: 5px solid whitesmoke;
+}
+
+.flex {
+    display: inherit;
 }
 
 container.box {
     width: 130px;
     height: auto;
-    font-size: 12px;
+    font-size: 14px;
     font-family: 'Oswald', sans-serif;
     background-color: gold;
     border: 12px hidden whitesmoke;
     border-radius: 5px;
     box-shadow: 0px 0px 5px whitesmoke;
     box-sizing: inherit;
-    display: table-cell;
+    display: inline-grid;
     padding: 0.5rem;
+    grid-template-rows: 45px 45px 155px 40px;
     div {
        padding-bottom: 1rem;
        padding-left: 0.5rem;
        border-left: double;
-    }
-    i {
-        font-weight: 700;
-        font-size: xx-large;
     }
 }
 
@@ -216,7 +246,7 @@ nav {
 
 /* Main Content */
 main {
-    background-color: rgb(10, 1, 92);
+    background-color: rgb(27, 13, 153);
     /* Makes the main content take up all surplus space and pushed footer down */
     flex: 1 0 auto;
     margin-top: 68px;
@@ -236,7 +266,6 @@ footer {
 }
 
 #social-networks i {
-    font-size: 160%;
     padding: 5%;
     color: aqua;
 }
@@ -278,10 +307,26 @@ footer {
 
     /* Main Content */
     main {
-        background-color: rgb(10, 1, 92);
+        background-color: rgb(27, 13, 153);
         /* Makes the main content take up all surplus space and pushed footer down */
         flex: 1 0 auto;
         margin-top: 68px;
+    }
+
+    .flex {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .section {
+        grid-template-rows: 75px 35px 100px 35px;
+        height: fit-content;
+    }
+
+    container.box {
+        width:20%;
+        height: 300px;
+        grid-template-rows: 45px 45px 150px 40px;
     }
 }
 
@@ -290,6 +335,12 @@ footer {
     #menu a:hover {
         border-bottom: 1px solid aqua;
     }
+
+    container.box {
+        width:20%;
+        height: 250px;
+        grid-template-rows: 45px 45px 100px 40px;
+    }
 }
 
 /* Media query: failsafe for future devices smaller than industry standard and laptops (300px and below) allows user to use burger icon by removing buttons*/
@@ -297,7 +348,7 @@ footer {
     .grid {
         grid-template-columns: auto 0px 0px 0px 40px;
     }
-
+    
     .button {
         display: none;
     }
