@@ -21,7 +21,7 @@ body {
 
 /* Header */
 header {
-    background-color: black;
+    background-color: #2f2f31;
     padding: 0 0rem;
     position: fixed;
     z-index: 99;
@@ -113,17 +113,17 @@ i {
 }
 
 .button {
-    background-color: rgb(42, 68, 218);;
-    border: gold;
+    background-color: cyan;
+    border: black;
     border-radius: 5px;
-    color: cyan;
+    color: black;
     text-align: center;
     text-decoration: none;
     font-family: 'Oswald' sans-serif;
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
-    box-shadow: 0px 0px 5px gold;
+    
     width: 74px;
     display: inline-block;
     font-size: 18px;
@@ -134,6 +134,56 @@ i {
 
 .button:hover {
     background-color: transparent;
+    color: gold;
+    box-shadow: 0px 0px 5px gold;
+}
+
+/* grid */
+/* set to inherit elements from header */
+.grid {
+    display: inline-grid;
+    grid-template-columns: auto 0px 75px 75px 30px;
+    grid-auto-flow: column;
+    align-items: center;
+    column-gap: 5px;
+    width: 100%;
+    padding: 0 0rem;
+    padding-right: 2px;
+}
+
+
+/* navbar styles with dropdown toggle  */
+/* navbar now matches header if toggled on and body if toggled off */
+nav {
+    position: absolute;
+    background-color: #2f2f31;
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: none;
+    top: 100%
+}
+
+/* nav toggle */
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
+}
+
+/* Main Content */
+main {
+    background-color: rgb(37 34 65);
+    /* Makes the main content take up all surplus space and pushed footer down */
+    flex: 1 0 auto;
+    margin-top: 68px;
 }
 
 .button-main {
@@ -146,7 +196,7 @@ i {
     text-decoration: none;
     text-transform: none;
     font-size: 14px;
-    width: fit-content;
+    width: 90px;
     height: auto;
     padding: 5px;
     display: inline-flex;
@@ -158,6 +208,41 @@ i {
 .button-main-orange {
     background-color: whitesmoke;
     color: orange;
+}
+
+.button-main-silver {
+    background-color: whitesmoke;
+    color: silver;
+}
+
+.button-main-skyblue {
+    background-color: whitesmoke;
+    color: skyblue;
+}
+
+.button-main-springgreen {
+    background-color: whitesmoke;
+    color: springgreen;
+}
+
+.button-main-lightblue {
+    background-color: whitesmoke;
+    color: rgb(0, 174, 239);
+}
+
+.button-main-darkgreen {
+    background-color: whitesmoke;
+    color: rgb(10, 110, 52);
+}
+
+.button-main-red {
+    background-color: whitesmoke;
+    color: rgb(197, 7, 7);
+}
+
+.button-main-gold {
+    background-color: whitesmoke;
+    color: rgb(185, 160, 16);
 }
 
 .button-main:hover {
@@ -188,8 +273,14 @@ i {
     display: inherit;
 }
 
+.gridletter {
+    display: grid;
+    grid-template-columns: 100%;
+    padding-top: 100px;
+}
+
 container.box {
-    width: 130px;
+    width: 100%;
     height: auto;
     font-size: 14px;
     font-family: 'Oswald', sans-serif;
@@ -200,6 +291,7 @@ container.box {
     box-sizing: inherit;
     display: inline-grid;
     padding: 0.5rem;
+    margin-top: 10px;
     grid-template-rows: 45px 45px 155px 40px;
     div {
        padding-bottom: 1rem;
@@ -208,57 +300,9 @@ container.box {
     }
 }
 
-/* grid */
-/* set to inherit elements from header */
-.grid {
-    display: inline-grid;
-    grid-template-columns: auto 0px 75px 75px 30px;
-    grid-auto-flow: column;
-    align-items: center;
-    column-gap: 5px;
-    width: 100%;
-    padding: 0 0rem;
-    padding-right: 2px;
-}
-
-
-/* navbar styles with dropdown toggle  */
-/* navbar now matches header if toggled on and body if toggled off */
-nav {
-    position: absolute;
-    background-color: black;
-    width: 100%;
-    left: 0;
-    padding: 0 1rem;
-    box-shadow: 0 2px 2px #3a3a3a;
-    display: none;
-    top: 100%
-}
-
-/* nav toggle */
-#nav-toggle:checked~nav {
-    display: block;
-}
-
-#nav-toggle {
-    display: none;
-}
-
-.nav-toggle-label {
-    font-size: 2rem;
-}
-
-/* Main Content */
-main {
-    background-color: rgb(27, 13, 153);
-    /* Makes the main content take up all surplus space and pushed footer down */
-    flex: 1 0 auto;
-    margin-top: 68px;
-}
-
 /* Footer */
 footer {
-    background-color: rgb(42, 68, 218);
+    background-color: #2f2f31;
 }
 
 #social-networks {
@@ -271,7 +315,8 @@ footer {
 
 #social-networks i {
     padding: 5%;
-    color: aqua;
+    font-size: xxx-large;
+    color: cyan;
 }
 
 /* Media query: tablets and larger (768px and up) */
@@ -311,7 +356,7 @@ footer {
 
     /* Main Content */
     main {
-        background-color: rgb(27, 13, 153);
+        background-color: rgb(37 34 65);
         /* Makes the main content take up all surplus space and pushed footer down */
         flex: 1 0 auto;
         margin-top: 68px;
@@ -322,13 +367,19 @@ footer {
         justify-content: space-evenly;
     }
 
+    .gridletter {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        column-gap: 10px;
+    }
+
     .section {
         grid-template-rows: 75px 35px 100px 35px;
         height: fit-content;
     }
 
     container.box {
-        width:20%;
+        width:auto;
         height: 300px;
         grid-template-rows: 45px 45px 150px 40px;
     }
@@ -338,12 +389,6 @@ footer {
 @media screen and (min-width: 992px) {
     #menu a:hover {
         border-bottom: 1px solid aqua;
-    }
-
-    container.box {
-        width:20%;
-        height: 250px;
-        grid-template-rows: 45px 45px 100px 40px;
     }
 }
 
