@@ -138,8 +138,7 @@ i {
 
 .button-main {
     background-color: cyan;
-    border: gold;
-    border-radius: 5px;
+    border: 2px solid whitesmoke;
     color: whitesmoke;
     font-family: 'Kurale', sans-serif;
     justify-content: center;
@@ -150,15 +149,20 @@ i {
     width: fit-content;
     height: auto;
     padding: 5px;
-    border-width: 5px;
     display: inline-flex;
     transition-property: background-color;
     transition-duration: 0.75s;
     letter-spacing: normal;
 }
 
+.button-main-orange {
+    background-color: whitesmoke;
+    color: orange;
+}
+
 .button-main:hover {
     background-color: transparent;
+    color: whitesmoke;
 }
 
 .section {
