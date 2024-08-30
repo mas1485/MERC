@@ -37,7 +37,14 @@ i {
 }
 
 .padding-bottom {
-    padding-bottom: 10px;
+    padding-bottom: 150px;
+}
+
+.info-text {
+    margin: revert;
+    text-transform: none;
+    font-family: sans-serif;
+    font-size: 16px;
 }
 
 h1 {
@@ -45,7 +52,7 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 1px;
     color: whitesmoke;
-    font-size: 32px;
+    font-size: 40px;
 }
 
 h2 {
@@ -53,7 +60,23 @@ h2 {
     text-transform: uppercase;
     letter-spacing: 1px;
     color: whitesmoke;
+    font-size: 32px;
+}
+
+h3 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: whitesmoke;
     font-size: 24px;
+}
+
+h4 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: whitesmoke;
+    font-size: 16px;
 }
 
 .h-gold {
@@ -64,12 +87,8 @@ h2 {
     color: rgb(51, 133, 255);
 }
 
-h3 {
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+.h-cyan {
     color: cyan;
-    font-size: 18px;
 }
 
 p {
@@ -290,10 +309,20 @@ main {
     text-align: center;
 }
 
+.section-club {
+    border-top: 5px solid whitesmoke;
+    background-color: rgb(0, 174, 239);
+    display: inline-grid;
+    justify-items: center;
+    width: 100%;
+    padding: 25px;
+    gap: 10px;
+    text-align: center;
+}
+
 .image {
     background-color: white;
     width: 100%;
-    padding: 25px;
     gap: 10px;
     border-top: 5px solid whitesmoke;
 }
@@ -302,10 +331,29 @@ main {
     display: inherit;
 }
 
+.flex-all {
+    display: inherit;
+    text-align: center;
+}
+
+.gridbanner {
+    display: inline-grid;
+    text-align: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 100px;
+    width: 100%;
+    border-top: 5px solid whitesmoke;
+    background-color: #2f2f31;
+    h3 {
+        font-size: 90%;
+    }
+}
+
 .gridletter {
     display: grid;
     grid-template-columns: 100%;
-    padding-top: 100px;
 }
 
 container.box {
@@ -357,6 +405,10 @@ container.box {
     background-color: rgb(185, 160, 16);
 }
 
+.text-list {
+    text-align: start;
+}
+
 /* Footer */
 footer {
     background-color: #2f2f31;
@@ -374,6 +426,12 @@ footer {
     padding: 5%;
     font-size: xxx-large;
     color: cyan;
+    transition-property: background-color;
+    transition-duration: 0.75s;
+}
+
+#social-networks i:hover {
+    color: gold;
 }
 
 /* Media query: tablets and larger (768px and up) */
@@ -424,10 +482,18 @@ footer {
         justify-content: space-evenly;
     }
 
+    .flex-all {
+        display: flex;
+    }
+
     .gridletter {
         display: grid;
         grid-template-columns: 50% 50%;
         column-gap: 10px;
+    }
+
+    .gridbanner {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
     .section {
