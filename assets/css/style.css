@@ -19,6 +19,11 @@ body {
     font-family: 'Oswald', sans-serif;
 }
 
+a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
 i {
     font-size: xx-large;
     color: whitesmoke;
@@ -159,6 +164,11 @@ header a {
 .active {
     font-weight: 700;
     color: aqua;
+}
+
+.active-gold {
+    font-weight: 700;
+    color: rgb(185, 160, 16);
 }
 
 .button {
@@ -494,6 +504,8 @@ footer {
 
     .gridbanner {
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: none;
+        height: 50px;
     }
 
     .section {
