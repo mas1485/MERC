@@ -268,9 +268,9 @@ main {
     color: orange;
 }
 
-.button-main-silver {
+.button-main-violet {
     background-color: whitesmoke;
-    color: silver;
+    color: palevioletred;
 }
 
 .button-main-skyblue {
@@ -320,14 +320,27 @@ main {
 }
 
 .section-club {
-    border-top: 5px solid whitesmoke;
+    border-top: 2px solid #3a3a3a;
     background-color: rgb(0, 174, 239);
     display: inline-grid;
-    justify-items: center;
+    align-content: start;
     width: 100%;
     padding: 25px;
     gap: 10px;
-    text-align: center;
+    @media screen and (min-width: 768px) {
+        height: 55vh;
+    }
+}
+
+.section-club-button {
+    border: 1px solid #3a3a3a;
+    @media screen and (min-width: 768px) {
+        border: none;
+        border-right: 1px solid #3a3a3a;
+        border-left: 1px solid #3a3a3a;
+    }
+    height: 100%;
+    align-content: center;
 }
 
 .image {
@@ -335,6 +348,13 @@ main {
     width: 100%;
     gap: 10px;
     border-top: 5px solid whitesmoke;
+}
+
+.image-club {
+    background-color: white;
+    width: 100%;
+    gap: 10px;
+    border-top: 2px solid #3a3a3a;
 }
 
 .flex {
@@ -354,7 +374,7 @@ main {
     grid-template-rows: 1fr 1fr;
     height: 100px;
     width: 100%;
-    border-top: 5px solid whitesmoke;
+    border-top: 2px solid #3a3a3a;
     background-color: #2f2f31;
     h3 {
         font-size: 90%;
@@ -391,8 +411,8 @@ container.box {
     background-color: orange;
 }
 
-.box-silver {
-    background-color: silver;
+.box-violet {
+    background-color: palevioletred;
 }
 
 .box-skyblue {
@@ -517,6 +537,10 @@ footer {
         width:auto;
         height: 300px;
         grid-template-rows: 45px 45px 150px 40px;
+    }
+
+    .section-club {
+        max-width: 50vw;
     }
 }
 
