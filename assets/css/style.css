@@ -15,8 +15,73 @@ body {
     display: flex;
     flex-direction: column;
     /* Generic Project Styles */
-    color: steelblue;
+    color: whitesmoke;
     font-family: 'Oswald', sans-serif;
+}
+
+i {
+    font-size: xx-large;
+    color: whitesmoke;
+}
+
+.fa-cyan {
+    color: cyan;
+}
+
+.fa-blue {
+    color: rgb(1, 75, 185);
+}
+
+.padding {
+    padding: 25px;
+}
+
+.padding-bottom {
+    padding-bottom: 10px;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: whitesmoke;
+    font-size: 32px;
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: whitesmoke;
+    font-size: 24px;
+}
+
+.h-gold {
+    color: rgb(185, 160, 16);
+}
+
+.h-blue {
+    color: rgb(51, 133, 255);
+}
+
+h3 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: cyan;
+    font-size: 18px;
+}
+
+p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: whitesmoke(0, 0, 161);
+}
+
+.p-blue {
+    color: rgb(1, 75, 185);
 }
 
 /* Header */
@@ -36,45 +101,10 @@ header a {
     color: inherit;
 }
 
-h1 {
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: whitesmoke;
-    font-size: 32px;
-}
-
-h2 {
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: gold;
-    font-size: 24px;
-}
-
-h3 {
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: cyan;
-    font-size: 18px;
-}
-
-p {
-    font-family: 'Oswald', sans-serif;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
-i {
-    font-size: xx-large;
-    color: rgb(0, 0, 202);
-}
-
 .nav {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
+    color: cyan;
     font-size: 120%;
     letter-spacing: 2px;
     list-style-type: none;
@@ -123,7 +153,6 @@ i {
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
-    
     width: 74px;
     display: inline-block;
     font-size: 18px;
@@ -284,7 +313,6 @@ container.box {
     height: auto;
     font-size: 14px;
     font-family: 'Oswald', sans-serif;
-    background-color: gold;
     border: 12px hidden whitesmoke;
     border-radius: 5px;
     box-shadow: 0px 0px 5px whitesmoke;
@@ -297,7 +325,36 @@ container.box {
        padding-bottom: 1rem;
        padding-left: 0.5rem;
        border-left: double;
+       border-color: rgb(1, 75, 185);
     }
+}
+
+.box-orange {
+    background-color: orange;
+}
+
+.box-silver {
+    background-color: silver;
+}
+
+.box-skyblue {
+    background-color: skyblue;
+}
+
+.box-springgreen {
+    background-color: springgreen;
+}
+
+.box-green {
+    background-color: rgb(10, 110, 52);
+}
+
+.box-red {
+    background-color: rgb(197, 7, 7);
+}
+
+.box-gold {
+    background-color: rgb(185, 160, 16);
 }
 
 /* Footer */
