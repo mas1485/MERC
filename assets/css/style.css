@@ -33,14 +33,6 @@ i {
     color: whitesmoke;
 }
 
-.fa-white {
-    color: whitesmoke;
-}
-
-.fa-cyan {
-    color: cyan;
-}
-
 .fa-blue {
     color: rgb(1, 75, 185);
 }
@@ -140,7 +132,7 @@ header a {
     height: 50px;
     width: 50px;
     background: border-box;
-    background-color: grey;
+    background-color: rgb(122, 122, 122);
 }
 
 .nav {
@@ -281,7 +273,7 @@ main:before {
     z-index: -1;
     transform: rotate(35deg);
     background: linear-gradient(to right, rgb(39 30 125) 0%, rgb(37 34 65) 50%, #3e3443 50%, red 100%)
-}    
+}   
 
 .button-main {
     border: 2px solid whitesmoke;
