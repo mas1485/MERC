@@ -24,6 +24,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color:cyan;
+}
+
 i {
     font-size: xx-large;
     color: whitesmoke;
@@ -280,7 +284,6 @@ main:before {
 }    
 
 .button-main {
-    background-color: cyan;
     border: 2px solid whitesmoke;
     color: whitesmoke;
     font-family: 'Kurale', sans-serif;
@@ -478,14 +481,35 @@ container.box {
 footer {
     background-color: #2f2f31;
     height: 100px;
+    flex-basis: content;
+    h4 {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    ul {
+        list-style-type: none;
+    }
+}
+
+#footersocial {
+    display: grid;
+    justify-items: center;
+}
+
+.footertext {
+    font-size: 14px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
 }
 
 .social-networks {
     text-align: center;
     padding: 20px 0;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
     justify-content: space-evenly;
-    list-style-type: none;
 }
 
 .social-networks i {
