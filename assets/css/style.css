@@ -273,7 +273,11 @@ main:before {
     z-index: -1;
     transform: rotate(35deg);
     background: linear-gradient(to right, rgb(39 30 125) 0%, rgb(37 34 65) 50%, #3e3443 50%, red 100%)
-}   
+}
+
+#subpage {
+    background: linear-gradient(125deg, rgb(39 30 125) 0%, rgb(37 34 65) 30%, #3e3443 30%, red 100%)
+}
 
 .button-main {
     border: 2px solid whitesmoke;
