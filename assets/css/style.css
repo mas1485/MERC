@@ -258,25 +258,14 @@ main {
     /* Makes the main content take up all surplus space and pushed footer down */
     flex: 1 0 auto;
     margin-top: 100px;
-    position: relative;
-    overflow: hidden;
 }
 
-/* sets a background behind content */
-main:before {
-    content: "";
-    position: fixed;
-    width: 300%;
-    height: 300%;
-    top: -100%;
-    left: -100%;
-    z-index: -1;
-    transform: rotate(35deg);
-    background: linear-gradient(to right, rgb(39 30 125) 0%, rgb(37 34 65) 50%, #3e3443 50%, red 100%)
+#homepage {
+    background: linear-gradient(100deg, rgb(39 30 125) 0%, rgb(37 34 65) 30%, #3e3443 30%, red 100%)
 }
 
 #subpage {
-    background: linear-gradient(125deg, rgb(39 30 125) 0%, rgb(37 34 65) 30%, #3e3443 30%, red 100%)
+    background: linear-gradient(120deg, rgb(25, 24, 87) 0%, rgb(23, 25, 138) 50%, rgb(27, 15, 190) 50%, rgb(14, 93, 184) 100%)
 }
 
 .button-main {
@@ -363,6 +352,7 @@ main:before {
     gap: 10px;
     @media screen and (min-width: 768px) {
         height: 55vh;
+        max-width: 50vw;
     }
 }
 
@@ -591,16 +581,7 @@ footer {
         display: none;
     }
 
-    /* Main Content */
-    main:before {
-        position: absolute;
-        width: 200%;
-        height: 200%;
-        top: -50%;
-        left: -90%;
-        background: linear-gradient(to right, rgb(39 30 125) 0%, rgb(37 34 65) 50%, #3e3443 50%, red 100%)
-    }   
-
+    /* Main Content */    
     .flex {
         display: flex;
         justify-content: space-evenly;
@@ -633,10 +614,6 @@ footer {
         grid-template-rows: 45px 45px 150px 40px;
         position: relative;
         left: 10px;
-    }
-
-    .section-club {
-        max-width: 50vw;
     }
 }
 
