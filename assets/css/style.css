@@ -45,6 +45,10 @@ i {
     padding-bottom: 150px;
 }
 
+.padding-top {
+    padding-top: 25px;
+}
+
 .info-text {
     margin: revert;
     text-transform: none;
@@ -619,7 +623,8 @@ footer {
     }
 
     .flex-all {
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
     .gridletter {
