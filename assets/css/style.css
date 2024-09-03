@@ -110,7 +110,7 @@ p {
 
 /* Header */
 header {
-    background-color: #2f2f31;
+    background: linear-gradient(60deg, rgb(0, 0, 0) 0%, rgb(31, 31, 31) 57.5%, #292929 57.5%, rgb(61, 61, 61) 100%);
     padding: 0 0rem;
     position: fixed;
     z-index: 99;
@@ -148,6 +148,10 @@ header a {
 
 .nav li {
     margin-bottom: 0.75em;
+    border-bottom: 1px solid;
+    @media screen and (min-width: 768px) {
+        border-bottom: 1px solid transparent;
+    }
 }
 
 /* Nav display breakpoints */
@@ -180,7 +184,7 @@ header a {
 .button {
     background-color: grey;
     border: black;
-    border-radius: 5px;
+    border-radius: 2px;
     color: whitesmoke;
     text-align: center;
     text-decoration: none;
@@ -220,18 +224,15 @@ header a {
     }
 }
 
-
-
 .grid-logo {
     color: black;
 }
-
 
 /* navbar styles with dropdown toggle  */
 /* navbar now matches header if toggled on and body if toggled off */
 nav {
     position: absolute;
-    background-color: #2f2f31;
+    background: linear-gradient(140deg, rgb(0, 0, 0) 0%, rgb(31, 31, 31) 55.5%, #292929 55.5%, rgb(61, 61, 61) 100%);
     width: 100%;
     left: 0;
     padding: 1rem;
@@ -261,7 +262,7 @@ main {
 }
 
 #homepage {
-    background: linear-gradient(100deg, rgb(39 30 125) 0%, rgb(37 34 65) 30%, #3e3443 30%, red 100%)
+    background: linear-gradient(120deg, rgb(27, 15, 190) 0%, rgb(25, 24, 87) 20%, #57020d 20%, rgb(255, 0, 0) 100%)
 }
 
 #subpage {
@@ -358,11 +359,6 @@ main {
 
 .section-club-button {
     border: 1px solid #3a3a3a;
-    @media screen and (min-width: 768px) {
-        border: none;
-        border-right: 1px solid #3a3a3a;
-        border-left: 1px solid #3a3a3a;
-    }
     height: 100%;
     align-content: center;
 }
@@ -395,8 +391,8 @@ main {
     text-align: center;
     align-items: center;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    height: 100px;
+    grid-template-rows: auto;
+    height: 200px;
     width: 100%;
     border-top: 2px solid #3a3a3a;
     background-color: #2f2f31;
@@ -475,6 +471,9 @@ footer {
     ul {
         list-style-type: none;
     }
+    li {
+        border-bottom: 5px solid transparent;
+    }
 }
 
 #footersocial {
@@ -496,6 +495,8 @@ footer {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 20px;
     justify-content: space-evenly;
+    justify-items: center;
+    list-style-type: none;
 }
 
 .social-networks i {
@@ -547,6 +548,7 @@ footer {
 @media screen and (min-width: 768px) {
     /* Header */
     nav {
+        background: transparent;
         display: block;
         position: relative;
         box-shadow: none;
@@ -599,8 +601,7 @@ footer {
 
     .gridbanner {
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: none;
-        height: 50px;
+        height: 100px;
     }
 
     .section {
