@@ -324,11 +324,23 @@ main {
 }
 
 #homepage {
-    background: linear-gradient(120deg, rgb(27, 15, 190) 0%, rgb(25, 24, 87) 20%, #57020d 20%, rgb(255, 0, 0) 100%)
+    background: linear-gradient(110deg, rgb(27, 15, 190) 0%, rgb(54, 27, 77) 30%, rgb(54, 27, 77) 30%, rgb(255, 0, 0) 100%)
 }
 
-#subpage {
-    background: linear-gradient(120deg, rgb(25, 24, 87) 0%, rgb(23, 25, 138) 50%, rgb(27, 15, 190) 50%, rgb(14, 93, 184) 100%)
+#clubpage {
+    background: linear-gradient(110deg, rgb(65, 0, 0) 0%, rgb(167, 0, 14)50%, rgb(167, 0, 14) 50%, rgb(255, 0, 0) 100%)
+}
+
+#memberspage {
+    background: linear-gradient(110deg, rgb(25, 24, 87) 0%, rgb(27, 15, 190)  50%, rgb(27, 15, 190) 50%, rgb(14, 93, 184) 100%)
+}
+
+#contactpage {
+    background: linear-gradient(290deg, #4682b4 0%, #b0c4de   50%, #b0c4de 50%, #c0c0c0 100%)
+}
+
+#storepage {
+    background: linear-gradient(110deg, #4682b4 0%, #b0c4de   50%, #b0c4de 50%, #c0c0c0 100%)  
 }
 
 #reasons {
