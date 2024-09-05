@@ -1,6 +1,7 @@
 /* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kurale&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap');
 
 /* Asterix Wildcard to overide generic styles */
 * {
@@ -42,7 +43,7 @@ i {
 }
 
 .padding-bottom {
-    padding-bottom: 150px;
+    padding-bottom: 25px;
 }
 
 .padding-top {
@@ -59,35 +60,26 @@ i {
 }
 
 h1 {
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: whitesmoke;
     font-size: 40px;
 }
 
 h2 {
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: whitesmoke;
     font-size: 32px;
 }
 
 h3 {
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: whitesmoke;
     font-size: 24px;
 }
 
 h4 {
+    font-size: 16px;
+}
+
+h1 , h2 , h3 , h4 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: whitesmoke;
-    font-size: 16px;
 }
 
 .h-gold {
@@ -270,6 +262,58 @@ main {
     /* Makes the main content take up all surplus space and pushed footer down */
     flex: 1 0 auto;
     margin-top: 100px;
+}
+
+#cover-main {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: auto;
+}
+
+#cover-text {
+    background-color: rgb(128, 128, 128);
+    display: flex;
+    flex-direction: column;
+    column-gap: 20px;
+    position: relative;
+    width: min-content;
+    padding: 20px;
+    line-height: 2;
+    h2 , h3 , h4 {
+        font-family: "Ga Maamli", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+    }
+    @media screen and (min-width: 768px) {
+        width: auto;
+        height: min-content;
+    }
+}
+
+#cover-button {
+    background-color: rgb(61, 61, 61);
+    border: black;
+    border-radius: 2px;
+    color: whitesmoke;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Oswald' sans-serif;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    width: 74px;
+    display: inline-block;
+    font-size: 18px;
+    transition-property: background-color;
+    transition-duration: 0.75s;
+    letter-spacing: normal;
+}
+
+#cover-button:hover {
+    background-color: transparent;
+    color: gold;
+    box-shadow: 0px 0px 5px gold;
 }
 
 #homepage {
