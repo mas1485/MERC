@@ -282,6 +282,8 @@ main {
     align-items: center;
     column-gap: 20px;
     position: relative;
+    min-width: 216.28px;
+    min-height: 268px;
     width: min-content;
     padding: 20px;
     line-height: 2;
