@@ -266,7 +266,9 @@ main {
 
 #cover-main {
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-end;
+    gap: 20px;
     width: 100%;
     height: auto;
 }
@@ -275,6 +277,7 @@ main {
     background-color: rgb(128, 128, 128);
     display: flex;
     flex-direction: column;
+    align-items: center;
     column-gap: 20px;
     position: relative;
     width: min-content;
@@ -286,7 +289,7 @@ main {
         font-style: normal;
     }
     @media screen and (min-width: 768px) {
-        width: auto;
+        width: 338px;
         height: min-content;
     }
 }
