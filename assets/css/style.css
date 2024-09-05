@@ -277,7 +277,6 @@ main {
 }
 
 #cover-text {
-    background-color: rgb(128, 128, 128);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -555,6 +554,10 @@ container.box {
 
 .box-gold {
     background-color: rgb(185, 160, 16);
+}
+
+.box-silver {
+    background-color: silver;
 }
 
 .text-list {
