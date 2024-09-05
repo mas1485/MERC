@@ -356,6 +356,16 @@ main {
     }
 }
 
+#policy-section {
+    display: flex;
+    flex-direction: column;
+    border-top: 2px solid #3a3a3a;
+    align-items: center;
+    width: 100%;
+    padding: 25px;
+    gap: 10px;
+}
+
 .left {
     align-items: flex-start;
     p {
@@ -476,6 +486,9 @@ main {
     width: 100%;
     gap: 10px;
     border-top: 2px solid #3a3a3a;
+    h1 , h2 , h3 , h4 {
+        color: #3a3a3a;
+    }
 }
 
 .flex {
