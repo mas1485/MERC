@@ -10,6 +10,58 @@
     box-sizing: border-box;
 }
 
+/* background opacity set with image for a better visual effect*/
+#background-home:before { 
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.1;
+    background: url(../images/background.jpg) no-repeat;
+    background-size: 140% 345px;
+}
+
+#background-home {
+    position: relative;
+    z-index: 2;
+}
+
+#background-club:before { 
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.1;
+    background: url(../images/clubbackground.jpg) no-repeat;
+    background-size:220% 950px;
+}
+
+#background-club {
+    position: relative;
+    z-index: 2;
+}
+
+#background-members:before { 
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.1;
+    background: url(../images/memberbackground.jpg) no-repeat;
+    background-size:130% 500px;
+}
+
+#background-members {
+    position: relative;
+    z-index: 2;
+}
+
 /* Generic Styles */
 body {
     min-height: 100vh;
@@ -326,27 +378,27 @@ main {
 }
 
 #homepage {
-    background: linear-gradient(110deg, rgb(27, 15, 190) 0%, rgb(54, 27, 77) 30%, rgb(54, 27, 77) 30%, rgb(255, 0, 0) 100%)
+    background: linear-gradient(110deg, rgb(27, 15, 190) 0%, rgb(54, 27, 77) 30%, rgb(54, 27, 77) 30%, rgb(255, 0, 0) 100%);
 }
 
 #clubpage {
-    background: linear-gradient(110deg, rgb(65, 0, 0) 0%, rgb(167, 0, 14)50%, rgb(167, 0, 14) 50%, rgb(255, 0, 0) 100%)
+    background: linear-gradient(110deg, rgb(65, 0, 0) 0%, rgb(167, 0, 14)50%, rgb(167, 0, 14) 50%, rgb(255, 0, 0) 100%);
 }
 
 #memberspage {
-    background: linear-gradient(110deg, rgb(25, 24, 87) 0%, rgb(27, 15, 190)  50%, rgb(27, 15, 190) 50%, rgb(14, 93, 184) 100%)
+    background: linear-gradient(110deg, rgb(25, 24, 87) 0%, rgb(27, 15, 190)  50%, rgb(27, 15, 190) 50%, rgb(14, 93, 184) 100%);
 }
 
 #contactpage {
-    background: linear-gradient(290deg, #4682b4 0%, #b0c4de   50%, #b0c4de 50%, #c0c0c0 100%)
+    background: linear-gradient(290deg, #4682b4 0%, #b0c4de   50%, #b0c4de 50%, #c0c0c0 100%);
 }
 
 #regpage {
-    background: linear-gradient(110deg, #63aae4 0%, #f9ffd8   50%, #f9ffd8 50%, #ffcc6c 100%)
+    background: linear-gradient(110deg, #63aae4 0%, #f9ffd8   50%, #f9ffd8 50%, #ffcc6c 100%);
 }
 
 #storepage {
-    background: linear-gradient(110deg, #4682b4 0%, #b0c4de   50%, #b0c4de 50%, #c0c0c0 100%)  
+    background: linear-gradient(110deg, #4682b4 0%, #b0c4de   50%, #b0c4de 50%, #c0c0c0 100%);
 }
 
 #reasons {
@@ -594,6 +646,7 @@ main {
 .gridletter {
     display: grid;
     grid-template-columns: 100%;
+    position: relative;
 }
 
 container.box {
@@ -774,6 +827,16 @@ footer {
 /* Media query: tablets and larger (768px and up) */
 /* Remove navbar toggle and positioned nav elements horizontal along the navbar */
 @media screen and (min-width: 768px) {
+    /* background */
+    #background-home:before {
+        background: url(../images/background.jpg) no-repeat center center/cover;
+    }
+    #background-club:before {
+        background: url(../images/clubbackground.jpg) no-repeat center center/cover;
+    }
+    #background-members:before {
+        background: url(../images/memberbackground.jpg) no-repeat center center/cover;
+    }
     /* Header */
     nav {
         background: transparent;
