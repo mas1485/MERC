@@ -340,6 +340,10 @@ main {
     background: linear-gradient(290deg, #4682b4 0%, #b0c4de   50%, #b0c4de 50%, #c0c0c0 100%)
 }
 
+#regpage {
+    background: linear-gradient(110deg, #63aae4 0%, #f9ffd8   50%, #f9ffd8 50%, #ffcc6c 100%)
+}
+
 #storepage {
     background: linear-gradient(110deg, #4682b4 0%, #b0c4de   50%, #b0c4de 50%, #c0c0c0 100%)  
 }
@@ -366,6 +370,75 @@ main {
     width: 100%;
     padding: 25px;
     gap: 10px;
+}
+
+#regsection {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+    @media screen and (min-width:768px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        min-height: 55vh;
+    }
+}
+
+#reg-member {
+    background: url("../images/member.jpg") no-repeat center center/cover;
+}
+
+#reg-captain {
+    background: url("../images/captain.jpg") no-repeat center center/cover;
+}
+
+#reg-login {
+    background: url("../images/login.jpg") no-repeat center center/cover;
+}
+
+#reg-button {
+    background-color: grey;
+    border: black;
+    border-radius: 2px;
+    color: whitesmoke;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Oswald' sans-serif;
+    align-content: center;
+    text-transform: uppercase;
+    height: 30px;
+    width: 120px;
+    display: inline-block;
+    font-size: 18px;
+    transition-property: background-color;
+    transition-duration: 0.75s;
+    letter-spacing: normal;
+}
+
+#reg-button:hover {
+    background-color: transparent;
+    color: gold;
+    box-shadow: 0px 0px 5px gold;
+}
+
+.regbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    min-width: 222px;
+    min-height: 600px;
+    padding: 25px;
+    border: 1px solid #3a3a3a;
+    border-radius: 5px;
+    h2 {
+        border-bottom: 1px solid;
+    }
+    h2 , h3 {
+        text-shadow: 0 0 2px black;
+        color: rgb(185, 160, 16);
+    }
 }
 
 .left {
