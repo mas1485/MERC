@@ -738,7 +738,7 @@ container.box {
 #member {
     background-color: #e6e7e9;
     border-radius: 10px;
-    padding: 30px;
+    padding: 10px;
     display: block;
     h2 , h4 , h5 {
         font-family: Inter, sans-serif;
@@ -969,7 +969,11 @@ footer {
         display: none;
     }
 
-    /* Main Content */    
+    /* Main Content */
+    #member {
+        padding: 30px;
+    }
+    
     .flex {
         display: flex;
         justify-content: space-evenly;
