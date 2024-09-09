@@ -350,6 +350,7 @@ main {
         font-family: "Ga Maamli", sans-serif;
         font-weight: 500;
         font-style: normal;
+        text-align: center;
     }
     @media screen and (min-width: 768px) {
         width: 338px;
@@ -825,6 +826,12 @@ container.box {
     border: 1px solid #3a3a3a;
     border-radius: 5px;
     padding: 10px;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 /* Footer */
