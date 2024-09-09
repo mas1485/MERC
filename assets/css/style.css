@@ -1026,3 +1026,10 @@ footer {
         display: none;
     }
 }
+
+/* Media query: remove content for smaller screens to prevent users from getting confused */
+@media screen and (max-width: 555px) {
+    #cover-main {
+        display: none;
+    }
+}
