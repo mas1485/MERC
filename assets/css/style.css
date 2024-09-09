@@ -266,6 +266,12 @@ header a {
     box-shadow: 0px 0px 5px gold;
 }
 
+.active-button {
+    background-color: transparent;
+    color: gold;
+    box-shadow: 0px 0px 5px gold;
+}
+
 /* grid */
 /* set to inherit elements from header */
 .grid {
