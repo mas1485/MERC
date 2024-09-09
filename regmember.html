@@ -48,15 +48,15 @@
                             <a href="contact.html">Contact</a>
                         </li>
                         <li>
-                            <a href="store.html" i class="fa-solid fa-store active"></i></a>
-                            <a href="store.html" class="active">Store</a>
+                            <a href="store.html" i class="fa-solid fa-store"></i></a>
+                            <a href="store.html">Store</a>
                         </li>
                     </ul>
                 </nav>
             </div>
             <div>
                 <a href="reg.html">
-                    <h1 class="button">signup</h1>
+                    <h1 class="button active">signup</h1>
                 </a>
             </div>
             <div>  
@@ -88,19 +88,202 @@
                             <a href="contact.html" i class="fa-regular fa-paper-plane"></i></a>
                         </li>
                         <li>
-                            <a href="store.html" class="active">Store</a>
-                            <a href="store.html" i class="fa-solid fa-store active"></i></a>
+                            <a href="store.html">Store</a>
+                            <a href="store.html" i class="fa-solid fa-store"></i></a>
                         </li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-    <!-- Main -->
     <main>
         <div id="contactpage" class="padding">
-            <h1>Signup</h1>
-            <h2>This feature is yet to be completed. We will be up and running soon!</h2>
+            <div id="member">
+                <form id="member-form" method="post" action="mercdirector@outlook.com">
+                    <section>
+                        <h2>Multi Ethnic Running Club CIC Membership Registration Form</h2>
+                        <h4>Complete the form below to sign up for our membership service.</h4>
+                    </section>
+                    <section>
+                        <h4>Name</h4>
+                        <div class="form-wide">
+                            <div>
+                                <label for="first-name"></label>
+                                <input type="text" name="first_name" id="first-name" class="text-input-v2" required>
+                            </div>
+                            <div>
+                                <label for="last-name"></label>
+                                <input type="text" name="last_name" id="last-name" class="text-input-v2" required>
+                            </div>
+                        </div>
+                        <div class="form-wide">
+                            <h5>First Name</h5>
+                            <h5>Last Name</h5>
+                        </div>
+                    </section> 
+                    <section>
+                        <h4>Contact Information</h4>
+                        <div class="form-wide">
+                            <div>
+                                <label for="email-address"></label>
+                                <input type="email" name="email_address" id="email-address" class="text-input-v2" required>
+                            </div>
+                            <div>
+                                <label for="phone-number"></label>
+                                <input type="text" name="phone_number" id="phone-number" class="text-input-v2" required>
+                            </div>
+                        </div>
+                        <div class="form-wide">
+                            <h5>Email Address</h5>
+                            <h5>Phone Number</h5>
+                        </div>
+                    </section>
+                    <section>
+                        <h4>Address</h4>
+                        <div>
+                            <div>
+                                <label for="address-1"></label>
+                                <input type="text" name="address-1" id="address-1" class="text-input-v2" required>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>Street Address</h5>
+                        </div>
+                        <div>
+                            <div>
+                                <label for="address-2"></label>
+                                <input type="text" name="address-2" id="address-2" class="text-input-v2" required>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>Street Address Line 2</h5>
+                        </div>
+                        <div class="form-wide">
+                            <div>
+                                <label for="city"></label>
+                                <input type="text" name="city" id="city" class="text-input-v2" required>
+                            </div>
+                            <div>
+                                <label for="county"></label>
+                                <input type="text" name="county" id="county" class="text-input-v2" required>
+                            </div>
+                        </div>
+                        <div class="form-wide">
+                            <h5>City</h5>
+                            <h5>County/State</h5>
+                        </div>
+                        <div class="form-wide">
+                            <div>
+                                <label for="postcode"></label>
+                                <input type="text" name="postcode" id="postcode" class="text-input-v2" required>
+                            </div>
+                            <div>
+                                <label for="country"></label>
+                                <input type="text" name="country" id="country" class="text-input-v2" required>
+                            </div>
+                        </div>
+                        <div class="form-wide">
+                            <h5>Postcode/Zip Code</h5>
+                            <h5>Country</h5>
+                        </div>
+                    </section>
+                    <section>
+                        <h4>Medical Information</h4>
+                        <div>
+                            <div>
+                                <textarea id="message" name="message">I have no existing medical conditions that would effect my participation.</textarea>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>Please list any medical conditions, prescribed medications and allergies.</h5>
+                        </div>
+                    </section>
+                    <section id="permission">
+                        <h4>Social Media Permissions</h4>
+                        <h5>I hereby grant permission to Multi Ethnic Running Club CIC to use photos, videos, and other media captured during club activities for promotional purposes on social media platforms and the club's website. I understand that my name may be associated with these materials. Please confirm below: </h5>
+                        <div class="radio-buttons">
+                            <div>
+                                <label for="yes">Yes</label>
+                                <input type="radio" name="socialmedia" id="socialmedia" value="yes" required="" checked="">
+                            </div>
+                            <div>
+                                <label for="no">No</label>
+                                <input type="radio" name="socialmedia" id="socialmedia" value="no" required="">
+                            </div>
+                        </div>
+                    </section>
+                    <section id="permission">
+                        <h4>Club Captaincy</h4>
+                        <h5>I would like to register my interest to become a club captain!</h5>
+                        <div class="radio-buttons">
+                            <div>
+                                <label for="yes">Yes</label>
+                                <input type="radio" name="captainregistration" id="captainregistration" value="yes" required="" checked="">
+                            </div>
+                            <div>
+                                <label for="no">No</label>
+                                <input type="radio" name="captainregistration" id="captainregistration" value="no" required="">
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h4>Where did you hear about us?</h4>
+                        <textarea id="message" name="message">Let us know where you heard about us from?</textarea>
+                    </section>
+                    <section id="permission">
+                        <h4>Membership Rules</h4>
+                        <div>
+                            <h5>Membership is available to anyone 18 years of age or older.</h5>
+                        </div>
+                        <div>
+                            <h5>Members promise NOT to use or conduct any fraudulent or business activity or have more than one membership account at any time.</h5>
+                        </div>    
+                        <div>
+                            <h5>By signing up to the membership I declare that I accept the rules of the club.</h5>
+                        </div>
+                        <div>
+                            <h5>I have read, understood and accepted the rules for membership.</h5>
+                        </div>
+                        <div class="radio-buttons">
+                            <label for="yes">Yes</label>
+                            <input type="checkbox" name="membership-rules" id="membership-rules" value="yes" required="">
+                        </div>
+                    </section>
+                    <section id="permission">
+                        <h4>Privacy Policy</h4>
+                        <div>
+                            <h4>GDPR Statement</h4>
+                        </div>   
+                        <div>
+                            <h5>By signing this form, I acknowledge that I have read and understood the club's Privacy Policy, which outlines how my personal data will be collected, processed, and stored in compliance with the General Data Protection Regulation (GDPR).</h5>
+                        </div>
+                        <div>
+                            <h4>Agreement</h4>
+                        </div>   
+                        <div>
+                            <h5>By confirming my membership agree to abide by the rules and regulations of the [Multi Ethnic Running Club CIC]. I understand that running involves certain risks and I will not hold the club or its organizers responsible for any injuries or accidents that may occur during club activities.</h5>
+                        </div>
+                        <div>
+                            <h5>I have read, understood and accepted the privacy policy for membership.</h5>
+                        </div>
+                        <div class="radio-buttons">
+                            <label for="yes">Yes</label>
+                            <input type="checkbox" name="membership-policy" id="membership-policy" value="yes" required="">
+                        </div>
+                    </section>
+                    <section class="form-center">
+                        <div>
+                            <h5>Once you submit your application, you will receive a confirmation email with your membership details and one of our Club captains will reach out to you!</h5>
+                        </div>
+                        <div>
+                            <h5>Thank You!</h5>
+                        </div>
+                        <div>
+                            <button type="submit" class="join-button">Submit Application</button>
+                        </div>
+                    </section>
+                </form>
+            </div>
         </div>
     </main>
     <!-- Footer -->

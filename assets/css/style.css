@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kurale&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 /* Asterix Wildcard to overide generic styles */
 * {
@@ -127,7 +128,11 @@ h4 {
     font-size: 16px;
 }
 
-h1 , h2 , h3 , h4 {
+h5 {
+    font-size: 12px;
+}
+
+h1 , h2 , h3 , h4 , h5 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -729,6 +734,63 @@ container.box {
     }
 }
 
+#member {
+    background-color: #e6e7e9;
+    border-radius: 10px;
+    padding: 30px;
+    display: block;
+    h2 , h4 , h5 {
+        font-family: Inter, sans-serif;
+        color: #3a3a3a;
+    }
+    h4 , h5 {
+        text-transform: none;
+        font-weight: normal;
+    }
+}
+
+#member-form {
+    display: flex;
+    flex-direction: column;
+    font-family: Inter, sans-serif;
+    color: #666;
+    gap: 25px;
+}
+
+#permission {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    p {
+        font-family: Inter , sans-serif;
+        font-weight: normal;
+        text-transform: none;
+    }
+    li {
+        list-style-type: none;
+    }
+}
+
+.form-wide {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+}
+
+.form-center {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    text-align: center;
+    max-width: 60%;
+    padding: 20px;
+    gap: 10px;
+    background-color: whitesmoke;
+    border: 1px solid #3a3a3a;
+    border-radius: 5px;
+}
+
 .text-input {
     color: #3a3a3a;
     width: 100%;
@@ -737,6 +799,32 @@ container.box {
     border: 1px solid #3a3a3a;
     border-radius: 2px;
     padding: 0 5px;
+}
+
+.text-input-v2 {
+    color: #3a3a3a;
+    width: 100%;
+    height: 25px;
+    margin: 5px 0 5px 0;
+    border: 1px solid #3a3a3a;
+    border-radius: 2px;
+    padding: 0 5px;
+}
+
+.radio-buttons {
+    display: flex;
+    gap: 50px;
+}
+
+.join-button {
+    background-color: rgb(101, 224, 101);
+    text-transform: capitalize;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    color: whitesmoke;
+    border: 1px solid #3a3a3a;
+    border-radius: 5px;
+    padding: 10px;
 }
 
 /* Footer */
