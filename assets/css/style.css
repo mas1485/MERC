@@ -712,6 +712,18 @@ container.box {
     text-align: start;
 }
 
+.mainpage-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    h5 {
+        font-weight: normal;
+    }
+    img {
+        width: 50%;
+    }
+}
+
 /* Forms */
 #message {
     width: 100%;
