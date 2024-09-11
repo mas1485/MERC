@@ -111,6 +111,10 @@ i {
     line-height: 1.5;
 }
 
+.underline {
+    text-decoration: underline;
+}
+
 h1 {
     font-size: 40px;
 }
@@ -634,9 +638,6 @@ main {
 .flex-all {
     display: inherit;
     text-align: center;
-    a {
-        text-decoration: underline;
-    }
 }
 
 .gridbanner {
