@@ -18,9 +18,13 @@ I have held several meetings with the sole director over this project and contin
 
 Before we get into the meat of the specific aspects of the site I would like to provide some contextual information which might give explanations for the layout and functionality of the site.
 
+You will find all the html files under the merc folder, with the css file in the css folder under assets.
+
+The assets folder also houses favicon, images and pdfs which were also used in the site creation.
+
 I wanted to build a website that not only works using the current tools but had the potential to improve in the future, the long-term design for this site was a place where the features were interactive and pulled live information from various sources, such as from a company app or social media. I understood that I had to be realistic about what was expected of me in this project and what I could do with the tools I had.
 
-I also had alot of internet issues in which I resorted to using VS Code to tackle, however, upon using the code, this attempted to sign in using my brother's account, therefore there is a submission under his account which simply should show the code not being changed but only to set up the push/pull between the applications 'Fork' and 'VS Code'
+I also had alot of internet issues in which I resorted to using VS Code to tackle so that I could operate offline and then push the code to the repository on GitHub, however, upon using the application code, this attempted to sign in using another account, therefore there is a submission under a separate account however this was done to test that the account changes were completed properly so if you look at the code history this should show the code not being changed but only to set up the push/pull between the applications 'Fork' and 'VS Code' with my account.
 
 #Navigation
 
