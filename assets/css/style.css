@@ -168,7 +168,10 @@ p {
 
 /* Header */
 header {
-    background: linear-gradient(60deg, rgb(0, 0, 0) 0%, rgb(31, 31, 31) 67.5%, #292929 67.5%, rgb(61, 61, 61) 100%);
+    background: linear-gradient(60deg, rgb(0, 0, 0) 0%, rgb(31, 31, 31) 70.5%, #292929 70.5%, rgb(61, 61, 61) 100%);
+    @media screen and (min-width:768px) {
+        background: linear-gradient(60deg, rgb(0, 0, 0) 0%, rgb(31, 31, 31) 57.5%, #292929 57.5%, rgb(61, 61, 61) 100%);
+    }
     padding: 0 0rem;
     position: fixed;
     z-index: 99;
@@ -177,9 +180,6 @@ header {
     box-shadow: 0 2px 2px #3a3a3a;
     display: flex;
     align-items: center;
-    @media screen and (min-width:768px) {
-        background: linear-gradient(60deg, rgb(0, 0, 0) 0%, rgb(31, 31, 31) 57.5%, #292929 57.5%, rgb(61, 61, 61) 100%);
-    }
 }
 
 header a {
