@@ -621,6 +621,13 @@ main {
     padding: 25px;
     gap: 10px;
     text-align: center;
+    @media screen and (min-width:768px) {
+        grid-template-rows: 75px 35px 100px 35px;
+        height: fit-content;
+    }
+    @media screen and (min-width:1560px) {
+        height: 450px;
+    }
 }
 
 .section-club {
@@ -672,10 +679,23 @@ main {
 }
 
 .image {
-    background-color: white;
     width: 100%;
-    gap: 10px;
+    height: 100%;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+
+.image-container {
+    display: grid;
+    gap: 20px;
+    max-height: 330px;
+    width: 100%;
+    margin: 0px auto;
     border-top: 5px solid whitesmoke;
+    @media screen and (min-width:1560px) {
+        max-height: 450px;
+    }
 }
 
 .image-club {
@@ -687,6 +707,15 @@ main {
     }
     img {
         width: 100%;
+    }
+}
+
+.image-column {
+    background: linear-gradient(60deg, rgb(0, 0, 0) 0%, rgb(61, 61, 61) 50%, rgb(61, 61, 61) 50%, whitesmoke 100%);
+    @media screen and (min-width:1560px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
     }
 }
 
@@ -711,7 +740,7 @@ main {
     align-items: center;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    height: 200px;
+    height: 100px;
     width: 100%;
     border-top: 2px solid #3a3a3a;
     background-color: #2f2f31;
@@ -1078,12 +1107,7 @@ footer {
 
     .gridbanner {
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        height: 100px;
-    }
-
-    .section {
-        grid-template-rows: 75px 35px 100px 35px;
-        height: fit-content;
+        height: 50px;
     }
 
     container.box {
