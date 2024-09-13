@@ -394,6 +394,15 @@ main {
     box-shadow: 0px 0px 5px gold;
 }
 
+#meetup {
+    display: flex;
+    flex-direction: column;
+    background-color: #9b9696;   
+    padding: 25px;
+    gap: 10px;
+    border-top: 2px solid #3a3a3a;
+}
+
 #homepage {
     background: linear-gradient(110deg, rgb(27, 15, 190) 0%, rgb(54, 27, 77) 30%, rgb(54, 27, 77) 30%, rgb(255, 0, 0) 100%);
 }
@@ -430,16 +439,6 @@ main {
         text-decoration: none;
         text-transform: none;
     }
-}
-
-#policy-section {
-    display: flex;
-    flex-direction: column;
-    border-top: 2px solid #3a3a3a;
-    align-items: center;
-    width: 100%;
-    padding: 25px;
-    gap: 10px;
 }
 
 #regsection {
@@ -613,10 +612,35 @@ main {
     }
 }
 
+.section-faq {
+    border-top: 2px solid #3a3a3a;
+    background-color: palevioletred;
+    display: inline-grid;
+    align-content: start;
+    width: 100%;
+    padding: 25px;
+    gap: 25px;
+    p {
+        padding-top: 10px;
+        padding-bottom: 10px
+    }
+}
+
 .section-club-button {
     border: 1px solid #3a3a3a;
     height: 100%;
     align-content: center;
+}
+
+.policy-section {
+    background-color: gray;
+    padding: 25px;
+    display: inline-grid;
+    gap: 10px;
+    border-top: 2px solid #3a3a3a;
+    p {
+        text-align: start;
+    }    
 }
 
 .image {
@@ -627,7 +651,6 @@ main {
 }
 
 .image-club {
-    column-count: 2;
     background-color: lightgray;
     padding: 5px;
     border-top: 2px solid #3a3a3a;
@@ -636,6 +659,12 @@ main {
     }
     img {
         width: 100%;
+    }
+}
+
+.image-club-column {
+    @media screen and (min-width:426px) {
+        column-count: 2;
     }
 }
 
