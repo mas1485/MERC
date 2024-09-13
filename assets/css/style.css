@@ -396,11 +396,36 @@ main {
 
 #meetup {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    background-color: #9b9696;   
+    background: url(../images/southend.jpg) no-repeat center center/cover;
     padding: 25px;
     gap: 10px;
     border-top: 2px solid #3a3a3a;
+}
+
+#times {
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 15px;
+    text-align: center;
+    flex-basis: 100px;
+    flex-grow: 1;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+}
+
+.times-header {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.times-icon {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
 #homepage {
@@ -623,6 +648,9 @@ main {
     p {
         padding-top: 10px;
         padding-bottom: 10px
+    }
+    h3 {
+        text-align: center;
     }
 }
 
