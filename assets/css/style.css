@@ -831,16 +831,17 @@ div.box div {
     display: block;
 }
 
-#contact > h2 , #contact > h3, #contact > i {
-    color: #3a3a3a;
-}
-
 #contact-form {
     color: #666;
 }
 
-#contact-form h2 {
+#contact-form > h2 {
     margin-bottom: 20px;
+    color: #3a3a3a;
+}
+
+#contact-form > h2 > i {
+    color: #3a3a3a;
 }
 
 #member {
