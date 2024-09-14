@@ -339,6 +339,7 @@ main {
 .cover-text {
     display: flex;
     flex-direction: column;
+    text-align: center;
     align-items: center;
     justify-content: space-evenly;
     gap: 10px;
@@ -349,7 +350,7 @@ main {
     border-radius: 5px;
 }
 
-.cover-text h2 h3 h4 {
+.cover-text > h2 , .cover-text > h3 , .cover-text > h4 {
     font-family: "Ga Maamli";
     font-weight: 500;
     font-style: normal;
