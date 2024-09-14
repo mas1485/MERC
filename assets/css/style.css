@@ -70,7 +70,7 @@ body {
     flex-direction: column;
     /* Generic Project Styles */
     color: whitesmoke;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Oswald';
 }
 
 li {
@@ -78,7 +78,10 @@ li {
 }
 
 li:hover {
-    a i {
+    & a {
+        color:cyan;
+    }
+    & i {
         color:cyan;
     }
 }
@@ -142,7 +145,7 @@ h5 {
 }
 
 h1 , h2 , h3 , h4 , h5 {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Oswald';
     text-transform: uppercase;
     letter-spacing: 1px;
     color: whitesmoke;
@@ -161,7 +164,7 @@ h1 , h2 , h3 , h4 , h5 {
 }
 
 p {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Oswald';
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -200,7 +203,7 @@ header a {
 }
 
 .nav {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Oswald';
     text-transform: uppercase;
     text-align: left;
     color: whitesmoke;
@@ -209,37 +212,25 @@ header a {
     list-style-type: none;
     text-wrap: nowrap;
     gap: 10px;
-    @media screen and (min-width: 768px) {
-        text-align: center;
-    }
 }
 
 .nav li {
     margin-bottom: 0.75em;
     border-bottom: 1px solid;
-    @media screen and (min-width: 768px) {
-        border-bottom: 1px solid transparent;
-        display: grid;
-    }
 }
 
 .nav i {
     font-size: larger;
 }
 
-/* Nav display breakpoints */
-
-.nav-narrow {
-        @media screen and (min-width: 768px) {
-        display: none;
-    }
+.nav a {
+    margin: auto;
 }
+
+/* Nav display breakpoints */
 
 .nav-wide {
     display: flex;
-    @media screen and (max-width: 767px) {
-        display: none;
-    }
     li:hover {
         & a {
             color: cyan;
@@ -266,7 +257,7 @@ header a {
     color: whitesmoke;
     text-align: center;
     text-decoration: none;
-    font-family: 'Oswald' sans-serif;
+    font-family: 'Oswald';
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
@@ -303,9 +294,6 @@ header a {
     height: 100%;
     width: 100%;
     padding: 0 0rem;
-    @media screen and (min-width: 420px) {
-        grid-template-columns: 169px auto 75px 75px 75px;
-    }
 }
 
 .grid-logo {
@@ -352,9 +340,6 @@ main {
     gap: 20px;
     width: 100%;
     height: auto;
-    @media screen and (min-width: 768px) {
-        justify-content: flex-end;
-    }
 }
 
 .cover-text {
@@ -368,7 +353,7 @@ main {
     height: 180px;
     padding: 10px;
     border-radius: 5px;
-    h2 , h3 , h4 {
+    & h2 , h3 , h4 {
         font-family: "Ga Maamli", sans-serif;
         font-weight: 500;
         font-style: normal;
@@ -383,7 +368,7 @@ main {
     color: whitesmoke;
     text-align: center;
     text-decoration: none;
-    font-family: 'Oswald' sans-serif;
+    font-family: 'Oswald';
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
@@ -509,7 +494,7 @@ main {
     color: whitesmoke;
     text-align: center;
     text-decoration: none;
-    font-family: 'Oswald' sans-serif;
+    font-family: 'Oswald';
     align-content: center;
     text-transform: uppercase;
     height: 30px;
@@ -784,7 +769,7 @@ div.box {
     width: 100%;
     height: auto;
     font-size: 14px;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Oswald';
     border: 12px hidden whitesmoke;
     border-radius: 5px;
     box-shadow: 0px 0px 5px whitesmoke;
@@ -1087,6 +1072,19 @@ footer {
         top: 0.5rem;
     }
 
+    .nav {
+        text-align: center;
+    }
+
+    .nav li {
+        border-bottom: 1px solid transparent;
+        display: grid;
+    }
+
+    .nav-narrow {
+        display: none;
+    }
+
     #menu {
         display: flex;
     }
@@ -1113,6 +1111,10 @@ footer {
     }
 
     /* Main Content */
+    #cover-main {
+        justify-content: flex-end;
+    }
+
     #member {
         padding: 30px;
     }
@@ -1125,6 +1127,10 @@ footer {
     .flex-all {
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+
+    .grid {
+        grid-template-columns: 169px auto 75px 75px 75px;
     }
 
     .gridletter {
@@ -1147,6 +1153,12 @@ footer {
     }
 }
 
+/* Media query: (max 767px) */
+@media screen and (max-width: 767px) {
+    .nav-wide {
+        display: none;
+    }
+}
 /* Media query: large devices desktops and laptops (992px and up) */
 @media screen and (min-width: 992px) {
     #menu a:hover {
