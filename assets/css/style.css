@@ -463,7 +463,7 @@ main {
     background: linear-gradient(110deg, #4682b4 0%, #b0c4de   50%, #b0c4de 50%, #c0c0c0 100%);
 }
 
-#reasons {
+.reasons {
     display: flex;
     flex-direction: column;
     row-gap: 10px;
