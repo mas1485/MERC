@@ -770,7 +770,7 @@ main {
     position: relative;
 }
 
-container.box {
+div.box {
     width: 100%;
     height: auto;
     font-size: 14px;
@@ -1125,7 +1125,7 @@ footer {
         height: 50px;
     }
 
-    container.box {
+    div.box {
         max-width:45vw;
         height: 300px;
         grid-template-rows: 45px 45px 150px 40px;
