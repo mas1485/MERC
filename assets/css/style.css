@@ -73,13 +73,15 @@ body {
     font-family: 'Oswald', sans-serif;
 }
 
+li:hover {
+    a , i {
+        color:cyan;
+    }
+}
+
 a {
     color: whitesmoke;
     text-decoration: none;
-}
-
-a:hover {
-    color:cyan;
 }
 
 i {
@@ -218,6 +220,10 @@ header a {
         border-bottom: 1px solid transparent;
         display: grid;
     }
+}
+
+.nav i {
+    font-size: larger;
 }
 
 /* Nav display breakpoints */
@@ -394,6 +400,10 @@ main {
     box-shadow: 0px 0px 5px gold;
 }
 
+#hero {
+    background: linear-gradient(60deg, rgb(16, 0, 158) 0%, rgb(10, 2, 80) 57.5%, rgb(10, 2, 80)  57.5%, rgb(13, 9, 36) 100%);
+}
+
 #meetup {
     display: flex;
     flex-wrap: wrap;
@@ -442,6 +452,7 @@ main {
 
 #contactpage {
     background: linear-gradient(290deg, #4682b4 0%, #b0c4de   50%, #b0c4de 50%, #c0c0c0 100%);
+    min-height: 75vh;
 }
 
 #regpage {
@@ -725,6 +736,10 @@ main {
     }
 }
 
+.image-alt {
+    opacity: 0.2;
+}
+
 .flex {
     display: inherit;
 }
@@ -838,7 +853,7 @@ container.box {
     border-radius: 10px;
     padding: 30px;
     display: block;
-    h2 , i {
+    h2 , h3, i {
         color: #3a3a3a;
     }
 }
