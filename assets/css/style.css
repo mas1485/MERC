@@ -1002,10 +1002,6 @@ footer li {
     height: 40px;
 }
 
-.social-networks i:hover {
-    color: gold;
-}
-
 .facebook:hover {
     color: #1a0dab;
     background-color: whitesmoke;
