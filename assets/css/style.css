@@ -348,12 +348,13 @@ main {
     height: 180px;
     padding: 10px;
     border-radius: 5px;
-    & h2 , h3 , h4 {
-        font-family: "Ga Maamli", sans-serif;
-        font-weight: 500;
-        font-style: normal;
-        text-align: center;
-    }
+}
+
+.cover-text h2 h3 h4 {
+    font-family: "Ga Maamli";
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
 }
 
 .cover-button {
