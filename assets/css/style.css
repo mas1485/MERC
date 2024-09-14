@@ -375,7 +375,7 @@ main {
     }
 }
 
-#cover-button {
+.cover-button {
     background-color: rgb(61, 61, 61);
     border: black;
     border-radius: 2px;
@@ -394,7 +394,7 @@ main {
     letter-spacing: normal;
 }
 
-#cover-button:hover {
+.cover-button:hover {
     background-color: transparent;
     color: gold;
     box-shadow: 0px 0px 5px gold;
