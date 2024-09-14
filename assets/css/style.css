@@ -77,7 +77,11 @@ li {
     list-style-type: none;
 }
 
-li:hover a i {
+li:hover a {
+    color: cyan;
+}
+
+li:hover i {
     color: cyan;
 }
 
@@ -226,11 +230,6 @@ header a {
 
 .nav-wide {
     display: flex;
-    li:hover {
-        & a {
-            color: cyan;
-        }     
-    }
 }
 
 #logo img {
@@ -515,27 +514,31 @@ main {
     padding: 25px;
     border: 1px solid #3a3a3a;
     border-radius: 5px;
-    h2 {
-        border-bottom: 1px solid;
-    }
-    h2 , h3 {
-        text-shadow: 0 0 2px black;
-        color: rgb(185, 160, 16);
-    }
+}
+
+.regbox h2 {
+    border-bottom: 1px solid;
+}
+
+.regbox h2 , h3 {
+    text-shadow: 0 0 2px black;
+    color: rgb(185, 160, 16);
 }
 
 .left {
     align-items: flex-start;
-    p {
-        text-align: left;
-    }
+}
+
+.left p {
+    text-align: left;
 }
 
 .right {
     align-items: flex-end;
-    p {
-        text-align: right;
-    }
+}
+
+.right p {
+    text-align: right;
 }
 
 .button-main {
@@ -630,17 +633,20 @@ main {
     width: 100%;
     padding: 25px;
     gap: 25px;
-    p {
-        padding-top: 10px;
-        padding-bottom: 10px
-    }
-    h3 {
-        text-align: center;
-    }
-    i {
-        display: flex;
-        justify-content: center;
-    }
+}
+
+.section-faq  p {
+    padding-top: 10px;
+    padding-bottom: 10px
+}
+
+.section-faq  h3 {
+    text-align: center;
+}
+
+.section-faq  i {
+    display: flex;
+    justify-content: center;
 }
 
 .section-club-button {
@@ -686,12 +692,14 @@ main {
     background-color: lightgray;
     padding: 5px;
     border-top: 2px solid #3a3a3a;
-    h1 , h2 , h3 , h4 {
-        color: #3a3a3a;
-    }
-    img {
-        width: 100%;
-    }
+}
+
+.image-club h1 , h2 , h3 , h4 {
+    color: #3a3a3a;
+}
+
+.image-club img {
+    width: 100%;
 }
 
 .image-column {
@@ -721,9 +729,10 @@ main {
     width: 100%;
     border-top: 2px solid #3a3a3a;
     background-color: #2f2f31;
-    h3 {
-        font-size: 90%;
-    }
+}
+
+.gridbanner h3 {
+    font-size: 90%;
 }
 
 .gridletter {
@@ -745,12 +754,13 @@ div.box {
     padding: 0.5rem;
     margin-top: 10px;
     grid-template-rows: 45px 45px 155px 40px;
-    div {
-       padding-bottom: 1rem;
-       padding-left: 0.5rem;
-       border-left: double;
-       border-color: rgb(1, 75, 185);
-    }
+}
+
+div.box div {
+    padding-bottom: 1rem;
+    padding-left: 0.5rem;
+    border-left: double;
+    border-color: rgb(1, 75, 185);
 }
 
 .box-orange {
@@ -793,15 +803,18 @@ div.box {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    h5 {
-        font-weight: normal;
-    }
-    p {
-        text-transform: none;
-    }
-    img {
-        width: 50%;
-    }
+}
+
+.mainpage-nav h5 {
+    font-weight: normal;
+}
+
+.mainpage-nav p {
+    text-transform: none;
+}
+
+.mainpage-nav img {
+    width: 50%;
 }
 
 /* Forms */
@@ -815,16 +828,18 @@ div.box {
     border-radius: 10px;
     padding: 30px;
     display: block;
-    h2 , h3, i {
-        color: #3a3a3a;
-    }
+}
+
+#contact h2 , h3, i {
+    color: #3a3a3a;
 }
 
 #contact-form {
     color: #666;
-    h2 {
-        margin-bottom: 20px;
-    }
+}
+
+#contact-form h2 {
+    margin-bottom: 20px;
 }
 
 #member {
@@ -832,14 +847,16 @@ div.box {
     border-radius: 10px;
     padding: 10px;
     display: block;
-    h2 , h4 , h5 {
-        font-family: Inter, sans-serif;
-        color: #3a3a3a;
-    }
-    h4 , h5 {
-        text-transform: none;
-        font-weight: normal;
-    }
+}
+
+#member h2 , h4 , h5 {
+    font-family: Inter, sans-serif;
+    color: #3a3a3a;
+}
+
+#member h4 , h5 {
+    text-transform: none;
+    font-weight: normal;
 }
 
 #member-form {
@@ -854,14 +871,16 @@ div.box {
     display: flex;
     flex-direction: column;
     gap:20px;
-    p {
-        font-family: Inter , sans-serif;
-        font-weight: normal;
-        text-transform: none;
-    }
-    li {
-        list-style-type: none;
-    }
+}
+
+.permission p {
+    font-family: Inter , sans-serif;
+    font-weight: normal;
+    text-transform: none;
+}
+
+.permission li {
+    list-style-type: none;
 }
 
 .form-wide {
@@ -931,16 +950,19 @@ footer {
     background-color: #2f2f31;
     height: 100px;
     flex-basis: content;
-    h4 {
-        padding-top: 5px;
-        padding-bottom: 5px;
-    }
-    ul {
-        list-style-type: none;
-    }
-    li {
-        border-bottom: 5px solid transparent;
-    }
+}
+
+footer h4 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer li {
+    border-bottom: 5px solid transparent;
 }
 
 #footersocial {
