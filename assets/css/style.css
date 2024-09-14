@@ -77,13 +77,8 @@ li {
     list-style-type: none;
 }
 
-li:hover {
-    & a {
-        color:cyan;
-    }
-    & i {
-        color:cyan;
-    }
+li:hover a i {
+    color: cyan;
 }
 
 a {
@@ -454,13 +449,14 @@ main {
     flex-direction: column;
     row-gap: 10px;
     padding-bottom: 10px;
-    p {
-        width: 50%;
-        font-family: sans-serif;
-        font-size: 16px;
-        text-decoration: none;
-        text-transform: none;
-    }
+}
+
+.reasons p {
+    width: 50%;
+    font-family: sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: none;
 }
 
 #regsection {
