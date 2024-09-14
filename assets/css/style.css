@@ -853,14 +853,25 @@ div.box div {
     display: block;
 }
 
-#member > h2 , #member > h4 , #member > h5 {
+#member-form h2 {
     font-family: Inter, sans-serif;
+    text-transform: none;
+    font-weight: normal;
     color: #3a3a3a;
 }
 
-#member h4 , #member > h5 {
+#member-form h4 {
+    font-family: Inter, sans-serif;
     text-transform: none;
     font-weight: normal;
+    color: #3a3a3a;
+}
+
+#member-form h5 {
+    font-family: Inter, sans-serif;
+    text-transform: none;
+    font-weight: normal;
+    color: #3a3a3a;
 }
 
 #member-form {
@@ -881,6 +892,7 @@ div.box div {
     font-family: Inter , sans-serif;
     font-weight: normal;
     text-transform: none;
+    color: #3a3a3a;
 }
 
 .permission li {
