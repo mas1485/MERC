@@ -901,7 +901,7 @@ div.box {
     gap: 25px;
 }
 
-#permission {
+.permission {
     display: flex;
     flex-direction: column;
     gap:20px;
