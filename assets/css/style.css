@@ -1034,28 +1034,28 @@ footer {
     color: gold;
 }
 
-#facebook:hover {
+.facebook:hover {
     color: #1a0dab;
     background-color: whitesmoke;
     border-radius: 50%;
     border-width: 5px 5px;
 }
 
-#x:hover {
+.x:hover {
     color: #1d9bf0;
     background-color: whitesmoke;
     border-radius: 50%;
     border-width: 5px 5px;
 }
 
-#youtube:hover {
+.youtube:hover {
     background-color: #ff0000;
     color: whitesmoke;
     border-radius: 50%;
     border-width: 5px 5px;
 }
 
-#instagram:hover {
+.instagram:hover {
     color: #ff8820;
     background-color: whitesmoke;
     border-radius: 50%;
