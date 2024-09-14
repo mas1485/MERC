@@ -78,10 +78,7 @@ li {
 }
 
 li:hover {
-    a {
-        color:cyan;
-    }
-    i {
+    a i {
         color:cyan;
     }
 }
