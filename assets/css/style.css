@@ -674,6 +674,10 @@ main {
     h3 {
         text-align: center;
     }
+    i {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .section-club-button {
