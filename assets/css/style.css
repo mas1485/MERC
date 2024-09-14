@@ -520,7 +520,7 @@ main {
     border-bottom: 1px solid;
 }
 
-.regbox h2 , h3 {
+.regbox > h2 , .regbox > h3 {
     text-shadow: 0 0 2px black;
     color: rgb(185, 160, 16);
 }
@@ -695,7 +695,7 @@ main {
     border-top: 2px solid #3a3a3a;
 }
 
-.image-club h1 , h2 , h3 , h4 {
+.image-club > h1 , .image-club > h2 , .image-club > h3 , .image-club > h4 {
     color: #3a3a3a;
 }
 
@@ -831,7 +831,7 @@ div.box div {
     display: block;
 }
 
-#contact h2 , h3, i {
+#contact > h2 , #contact > h3, #contact > i {
     color: #3a3a3a;
 }
 
@@ -850,12 +850,12 @@ div.box div {
     display: block;
 }
 
-#member h2 , h4 , h5 {
+#member > h2 , #member > h4 , #member > h5 {
     font-family: Inter, sans-serif;
     color: #3a3a3a;
 }
 
-#member h4 , h5 {
+#member h4 , #member > h5 {
     text-transform: none;
     font-weight: normal;
 }
@@ -1117,7 +1117,7 @@ footer li {
 
     .section {
         grid-template-rows: 75px 35px 100px 35px;
-        height: fit-content;
+        align-content: space-evenly;
     }
 
     .sectionclub {
