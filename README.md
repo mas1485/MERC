@@ -58,6 +58,45 @@ As the website evolves, the user will see more and more interactivity with the w
 
 I wanted the footer to have all the pages listed in the event that future deployments relying on external assets/tools (such as fontawesome or Java) would still allow the site to function and the user to navigate through the pages. There are multiple ways to navigate through the site, whether through the navbar, content or footer, giving the user chances to travel through the site in a meaningful way.
 
+#Mainpages
 
+I wanted to incorporate subpages to help break up the content so that the user was not overwhelmed by information, therefore the membership and club pages act as the central hubs with the other html subpages present behind sections that the user can choose between. When I learn how to use other tools I will remove pages to make this less clunky and more responsive.
 
+#Store
 
+I wanted to ensure that there was a payment solution for the site, however without being able to integrate this myself using only html css I resorted to linking the store page to the payment provider so that the user could browse the store and purchase items. The client has control over the items he sells and prices etc making this section very useful going forward for the short term. Ideally, as it is a little jarring for the user, I will fully integrate the system so that the user can signup and pay seamlessly as well as browse the store without going to another site.
+
+#Images
+
+The images on the site are from two sources, the client or google images. I have a list below detailing where I recieved the assets for these to account and acknowledge work that was not mine.
+
+Assets from the Client
+
+favicon
+bluelogo
+img001.jpg
+img002.jpg
+img010.jpg to img020.jpg
+imgfounder.jpg
+merc3dlogo.jpg
+merclogo.jpg
+mercstorelogo.jpg
+
+Assets from Google public domain
+background.jpg
+captain.jpg
+clubbackground.jpg
+harp.jpg
+harp24.jpg
+harp24album.jpg
+img003.jpg to img009.jpg
+login.jpg
+member.jpg
+memberbackground.jpg
+mulberry.jpg
+rnli-logo.jpg
+rnli.jpg
+southend.jpg
+
+All i icons are from Font Awesome using the free material.
+All pdfs are from the client.
