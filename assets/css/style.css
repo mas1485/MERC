@@ -465,11 +465,6 @@ main {
     flex-direction: column;
     gap: 25px;
     width: 100%;
-    @media screen and (min-width:768px) {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        min-height: 55vh;
-    }
 }
 
 #reg-member {
@@ -615,13 +610,6 @@ main {
     padding: 25px;
     gap: 10px;
     text-align: center;
-    @media screen and (min-width:768px) {
-        grid-template-rows: 75px 35px 100px 35px;
-        height: fit-content;
-    }
-    @media screen and (min-width:1560px) {
-        height: 450px;
-    }
 }
 
 .section-club {
@@ -632,10 +620,6 @@ main {
     width: 100%;
     padding: 25px;
     gap: 10px;
-    @media screen and (min-width: 768px) {
-        min-height: 55vh;
-        max-width: 50vw;
-    }
 }
 
 .section-faq {
@@ -696,9 +680,6 @@ main {
     width: 100%;
     margin: 0px auto;
     border-top: 5px solid whitesmoke;
-    @media screen and (min-width:1560px) {
-        max-height: 450px;
-    }
 }
 
 .image-club {
@@ -715,17 +696,6 @@ main {
 
 .image-column {
     background: linear-gradient(60deg, rgb(0, 0, 0) 0%, rgb(61, 61, 61) 50%, rgb(61, 61, 61) 50%, whitesmoke 100%);
-    @media screen and (min-width:1560px) {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-    }
-}
-
-.image-club-column {
-    @media screen and (min-width:426px) {
-        column-count: 2;
-    }
 }
 
 .image-alt {
@@ -1115,6 +1085,22 @@ footer {
     #member {
         padding: 30px;
     }
+
+    #regsection {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        min-height: 55vh;
+    }
+
+    .section {
+        grid-template-rows: 75px 35px 100px 35px;
+        height: fit-content;
+    }
+
+    .sectionclub {
+        min-height: 55vh;
+        max-width: 50vw;
+    }
     
     .flex {
         display: flex;
@@ -1141,6 +1127,16 @@ footer {
         height: 50px;
     }
 
+    .image-container {
+        max-height: 450px;
+    }
+
+    .image-column {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+    
     div.box {
         max-width:45vw;
         height: 300px;
@@ -1174,9 +1170,23 @@ footer {
     }
 }
 
+/* Media query: for large devices to make content more appealing */
+@media screen and (min-width:1560px) {
+    .section {
+        height: 450px;
+    }
+}
+
 /* Media query: remove content for smaller screens to prevent users from getting confused */
 @media screen and (max-width: 555px) {
     #cover-main {
         display: none;
+    }
+}
+
+/* Media query: ordered content to make it more appealing */
+@media screen and (min-width:426px) {
+    .image-club-column {
+        column-count: 2;
     }
 }
