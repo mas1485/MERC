@@ -418,7 +418,7 @@ main {
     border-top: 2px solid #3a3a3a;
 }
 
-#times {
+.times {
     color: #fafafa;
     background-color: rgba(0, 0, 0, .6);
     padding: 15px;
