@@ -661,9 +661,10 @@ main {
     display: inline-grid;
     gap: 10px;
     border-top: 2px solid #3a3a3a;
-    p {
-        text-align: start;
-    }    
+}
+
+.policy-section p {
+    text-align: start;
 }
 
 .pdf {
