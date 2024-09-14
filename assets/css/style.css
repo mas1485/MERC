@@ -734,6 +734,24 @@ main {
     }
 }
 
+.image-member {
+    @media screen and (min-width:768px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 200px;
+    }
+    background: linear-gradient(60deg, rgb(0, 122, 0) 0%, rgb(29, 255, 59) 50%, rgb(29, 255, 59) 50%, whitesmoke 100%);
+    padding: 5px;
+    border-top: 2px solid #3a3a3a;
+    h1 , h2 , h3 , h4 {
+        color: #3a3a3a;
+    }
+    img {
+        width: 100%;
+        align-self: center;
+    }
+}
+
 .image-column {
     background: linear-gradient(60deg, rgb(0, 0, 0) 0%, rgb(61, 61, 61) 50%, rgb(61, 61, 61) 50%, whitesmoke 100%);
     @media screen and (min-width:1560px) {
